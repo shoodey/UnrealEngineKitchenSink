@@ -3,6 +3,7 @@
 #include "KitchenSink/Public/Core/KSGameMode.h"
 #include "KitchenSink/Public/Characters/KSPlayerCharacter.h"
 #include "KitchenSink/Public/Core/KSPlayerController.h"
+#include "Logger/KSLogger.h"
 
 AKSGameMode::AKSGameMode()
 {
@@ -12,34 +13,33 @@ AKSGameMode::AKSGameMode()
 
 void AKSGameMode::SetupDefaultPawnClass()
 {
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(
-		TEXT("/Game/KitchenSink/Characters/BP_PlayerCharacter"));
+	const FString BlueprintClassPath = "/Game/KitchenSink/Characters/BP_PlayerCharacter.BP_PlayerCharacter_C";
 
-	if (PlayerPawnBPClass.Class != nullptr)
+	if (UClass* LoadedClass = StaticLoadClass(APawn::StaticClass(), nullptr, *BlueprintClassPath))
 	{
-		DefaultPawnClass = PlayerPawnBPClass.Class;
+		DefaultPawnClass = LoadedClass;
 	}
 	else
 	{
 		DefaultPawnClass = AKSPlayerCharacter::StaticClass();
 	}
 
-	UE_LOG(LogTemp, Log, TEXT("DefaultPawnClass: %s"), *PlayerPawnBPClass.Class->GetName());
+	KS_LOG(Warning, "AKSGameMode::DefaultPawnClass `{Name}`", *DefaultPawnClass->GetName());
 }
 
 void AKSGameMode::SetupPlayerControllerClass()
 {
-	static ConstructorHelpers::FClassFinder<APlayerController> PlayerControllerBPClass(
-		TEXT("/Game/KitchenSink/Core/Input/PC_KitchenSink"));
 
-	if (PlayerControllerBPClass.Class != nullptr)
+	const FString BlueprintClassPath = "/Game/KitchenSink/Core/Input/PC_KitchenSink.PC_KitchenSink_C";
+
+	if (UClass* LoadedClass = StaticLoadClass(APlayerController::StaticClass(), nullptr, *BlueprintClassPath))
 	{
-		PlayerControllerClass = PlayerControllerBPClass.Class;
+		PlayerControllerClass = LoadedClass;
 	}
 	else
 	{
 		PlayerControllerClass = AKSPlayerController::StaticClass();
 	}
-	
-	UE_LOG(LogTemp, Log, TEXT("PlayerControllerClass: %s"), *PlayerControllerBPClass.Class->GetName());
+
+	KS_LOG(Warning, "AKSGameMode::PlayerControllerClass `{Name}`", *PlayerControllerClass->GetName());
 }
