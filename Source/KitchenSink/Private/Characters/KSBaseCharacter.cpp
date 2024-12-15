@@ -1,6 +1,6 @@
 // Copyright Shoodey. All Rights Reserved.
 
-#include "KitchenSink/Public/Characters/KSBaseCharacter.h"
+#include "Characters/KSBaseCharacter.h"
 
 AKSBaseCharacter::AKSBaseCharacter()
 {

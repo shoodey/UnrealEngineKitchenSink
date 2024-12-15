@@ -1,6 +1,6 @@
 // Copyright Shoodey. All Rights Reserved.
 
-#include "KitchenSink/Public/Characters/KSPlayerCharacter.h"
+#include "Characters/KSPlayerCharacter.h"
 
 AKSPlayerCharacter::AKSPlayerCharacter()
 {
@@ -16,4 +16,3 @@ void AKSPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 }
-

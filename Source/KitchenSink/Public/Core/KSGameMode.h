@@ -17,4 +17,5 @@ public:
 private:
 	void SetupDefaultPawnClass();
 	void SetupPlayerControllerClass();
+	void SetupHUDClass();
 };
