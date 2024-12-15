@@ -1,0 +1,30 @@
+# macOS-specific files
+.DS_Store
+
+# IntelliJ IDEA project files
+.idea
+
+# Visual Studio & VS Code files
+.vs
+.vscode
+.vsconfig
+
+# Xcode project files
+*.xcodeproj
+*.xcworkspace
+
+# Solution-specific files
+*.sln
+*.slnf
+
+# Unreal Engine files
+Binaries
+Build
+Intermediate
+Saved
+DerivedDataCache
+Plugins
+
+# User settings
+*.uproject.DotSettings.user
+DefaultEditorPerProjectUserSettings.ini
