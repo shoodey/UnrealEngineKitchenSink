@@ -1,0 +1,3 @@
+[submodule "Plugins/StashCore"]
+	path = Plugins/StashCore
+	url = https://github.com/shoodey/StashCore.git
