@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Shoodey. All Rights Reserved.
 
 #include "KitchenSink.h"
 #include "Modules/ModuleManager.h"
