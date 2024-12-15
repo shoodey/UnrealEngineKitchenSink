@@ -13,9 +13,4 @@ class KITCHENSINK_API AKSGameMode : public AGameMode
 
 public:
 	AKSGameMode();
-
-private:
-	void SetupDefaultPawnClass();
-	void SetupPlayerControllerClass();
-	void SetupHUDClass();
 };

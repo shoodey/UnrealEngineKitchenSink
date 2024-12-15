@@ -10,9 +10,3 @@ void AKSPlayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 }
-
-// Called to bind functionality to input
-void AKSPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
-{
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
-}
