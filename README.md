@@ -13,6 +13,13 @@ me if you are interested in any of them. The goal is to publish them on the FAB 
 
 ## Plugins
 
-- **StachCore**: A universal storage system for Unreal Engine. Easily manage your items, inventory, stashes, gear, 
+### In development
+- **StashCore**: A universal storage system for Unreal Engine. Easily manage your items, inventory, stashes, gear, 
   loot, 
+  vendors, trade and more...
+
+### Planned
+- **StashUI**: A set of UI widgets to display and interact with StashCore data. It includes a drag and drop inventory 
+  system, a stash viewer, a gear viewer, a loot viewer, a vendor viewer, a trade viewer and more...
+- **StashEditor**: A visual editor for StashCore. Create and edit your items, inventories, stashes, gear, loot, 
   vendors, trade and more...
