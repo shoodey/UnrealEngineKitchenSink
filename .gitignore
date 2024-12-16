@@ -26,5 +26,6 @@ DerivedDataCache
 #Plugins
 
 # User settings
+*.sln.DotSettings.user
 *.uproject.DotSettings.user
 DefaultEditorPerProjectUserSettings.ini
