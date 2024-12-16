@@ -11,6 +11,11 @@ It can also serve as showcase for these plugins.
 While this repository is public, the plugins it contains are private. You can't access them directly. Please message 
 me if you are interested in any of them. The goal is to publish them on the FAB marketplace eventually.
 
+## C++ first, Blueprint accessible
+
+The plugins are built with C++ first, but they are designed to be accessible from Blueprints. The goal is to provide
+a good balance between performance and ease of use.
+
 ## Plugins
 
 ### In development
