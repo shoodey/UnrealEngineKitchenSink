@@ -6,16 +6,23 @@
 #include "KSBaseCharacter.h"
 #include "KSPlayerCharacter.generated.h"
 
+class UCameraComponent;
+class USpringArmComponent;
+
 UCLASS()
 class KITCHENSINK_API AKSPlayerCharacter : public AKSBaseCharacter
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	AKSPlayerCharacter();
 
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category="Camera", meta=(AllowPrivateAccess="true"))
+	TObjectPtr<USpringArmComponent> CameraBoom;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category="Camera", meta=(AllowPrivateAccess="true"))
+	TObjectPtr<UCameraComponent> FollowCamera;
+
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 };

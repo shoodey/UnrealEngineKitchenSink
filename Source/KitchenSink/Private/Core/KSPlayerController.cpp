@@ -49,10 +49,19 @@ void AKSPlayerController::HandleLook(const FInputActionValue& InputActionValue)
 
 void AKSPlayerController::HandleMove(const FInputActionValue& InputActionValue)
 {
+	const FRotator Rotation = GetControlRotation();
+	const FRotator YawRotation(0, Rotation.Yaw, 0);
+
+	// const FVector ForwardDirection = PlayerCharacter->GetActorForwardVector();
+	// const FVector RightDirection = PlayerCharacter->GetActorRightVector();
+
+	const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+	const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+
 	const FVector2D MovementVector = InputActionValue.Get<FVector2D>();
 
-	PlayerCharacter->AddMovementInput(PlayerCharacter->GetActorForwardVector(), MovementVector.Y);
-	PlayerCharacter->AddMovementInput(PlayerCharacter->GetActorRightVector(), MovementVector.X);
+	PlayerCharacter->AddMovementInput(ForwardDirection, MovementVector.Y);
+	PlayerCharacter->AddMovementInput(RightDirection, MovementVector.X);
 }
 
 void AKSPlayerController::HandleJump()
