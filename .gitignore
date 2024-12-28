@@ -29,3 +29,6 @@ DerivedDataCache
 *.sln.DotSettings.user
 *.uproject.DotSettings.user
 DefaultEditorPerProjectUserSettings.ini
+
+# Automation Presets
+Config/Automation/Presets
