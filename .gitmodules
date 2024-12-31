@@ -1,3 +1,6 @@
 [submodule "Plugins/StashCore"]
 	path = Plugins/StashCore
 	url = https://github.com/shoodey/StashCore.git
+[submodule "Plugins/UICore"]
+	path = Plugins/UICore
+	url = https://github.com/shoodey/UICore.git
