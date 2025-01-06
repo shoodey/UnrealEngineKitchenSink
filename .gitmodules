@@ -4,3 +4,6 @@
 [submodule "Plugins/UICore"]
 	path = Plugins/UICore
 	url = https://github.com/shoodey/UICore.git
+[submodule "Plugins/InteractionCore"]
+	path = Plugins/InteractionCore
+	url = https://github.com/shoodey/InteractionCore

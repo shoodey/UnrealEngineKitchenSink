@@ -23,7 +23,7 @@ Build
 Intermediate
 Saved
 DerivedDataCache
-Plugins
+#Plugins
 
 # User settings
 *.sln.DotSettings.user
