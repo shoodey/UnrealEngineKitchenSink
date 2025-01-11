@@ -17,4 +17,7 @@ namespace KitchenSink_GameplayTags
 	KITCHENSINK_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(KitchenSink_Interaction_DetectionZone_Raycast);
 	KITCHENSINK_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(KitchenSink_Interaction_DetectionZone_Beam);
 	KITCHENSINK_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(KitchenSink_Interaction_DetectionZone_Proximity);
+
+	// Items
+	KITCHENSINK_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(KitchenSink_Item_Vegetable_Carrot);
 }

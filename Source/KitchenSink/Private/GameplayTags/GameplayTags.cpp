@@ -15,4 +15,7 @@ namespace KitchenSink_GameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(KitchenSink_Interaction_DetectionZone_Raycast, "KitchenSink.Interaction.DetectionZone.Raycast");
 	UE_DEFINE_GAMEPLAY_TAG(KitchenSink_Interaction_DetectionZone_Beam, "KitchenSink.Interaction.DetectionZone.Beam");
 	UE_DEFINE_GAMEPLAY_TAG(KitchenSink_Interaction_DetectionZone_Proximity, "KitchenSink.Interaction.DetectionZone.Proximity");
+
+	// Items
+	UE_DEFINE_GAMEPLAY_TAG(KitchenSink_Item_Vegetable_Carrot, "KitchenSink.Item.Vegetable.Carrot");
 }
